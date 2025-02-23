@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+  <script>
+    // Attempting to access a non-existent element with an incorrect ID
+    const element = document.getElementById('myDive');
+    if (element) {
+      element.textContent = "Text changed!";
+    } else {
+      console.error("Element not found!");
+    }
+  </script>
+</body>
+</html>
